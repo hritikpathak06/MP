@@ -1,0 +1,383 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  /* background-color: rgb(192, 192, 192); */
+}
+
+.navbar-brand {
+  margin-left: 4rem;
+  font-size: 3rem;
+}
+
+.navbar-nav {
+  margin-left: auto;
+  margin-right: 2rem;
+  font-weight: bolder;
+}
+
+.navbar-nav li {
+  margin-right: 2rem;
+}
+
+.navbar-brand img {
+  height: 50px;
+  width: 70px;
+  margin-right: 1rem;
+}
+
+
+.just_for_demo {
+  color: red;
+}
+
+/* ************************Sign Up  Page ******************************************************************* */
+.zmdi {
+  font-size: 1.3rem;
+}
+
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: whitesmoke; */
+  border: none;
+  height: 100%;
+}
+
+.signup_content {
+  height: auto;
+  width: 80%;
+  background-color: white;
+  box-shadow: 3px 5px 7px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.signup_form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.signup_content h1 {
+  margin-left: 2rem;
+  font-weight: bolder;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.form_group {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.register_form input {
+  border: none;
+  outline: none;
+  margin: 15px 20px;
+  border-bottom: 2px solid black;
+  width: 100%;
+}
+
+.register_form input::placeholder {
+  background-color: white;
+}
+
+
+.register_form .form_submit {
+  padding: 10px 20px;
+  width: 40%;
+  margin-left: 2rem;
+  background-color: blue;
+  border-radius: 30px;
+  text-transform: uppercase;
+  transition: 1.2s;
+}
+
+
+.register_form .form_submit:hover {
+  background-color: green;
+  color: black;
+}
+
+.signup_image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup-img-link {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* ***************Contact page *U************************************************************** */
+
+.contact_item {
+  border: 2px solid black;
+  padding: 10px 20px;
+  width: 30%;
+  box-shadow: 3px 4px 5px 6px rgba(0, 0, 0, 0.2);
+}
+
+.contact_item img {
+  height: 30px;
+  width: 30px;
+}
+
+.contact_form_title {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: bolder;
+}
+
+.contact_form_conatainer {
+  box-shadow: 4px 5px 7px 10px rgba(0, 0, 0, 0.2);
+  height: auto;
+  width: 70%;
+  margin: auto;
+}
+
+.contact_submit {
+  margin-left: 1rem;
+  padding: 10px 15px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 30px;
+}
+
+.contact_submit:hover {
+  background-color: green;
+  color: black;
+}
+
+#contact_form input {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
+}
+
+/* ********************Home Page*************************************************************************************************** */
+.home_page {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home_page .home_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home_div p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: red;
+}
+
+.home_div h1 {
+  font-size: 4rem;
+  font-weight: bolder;
+}
+
+/* *********************About Page******************************************************** */
+
+.emp_profile {
+  width: 10%;
+  box-shadow: 3px 4px 5px 6px rgba(0, 0, 0, 0.2);
+}
+
+.profile_pic {
+  height: 20vh;
+  width: 10vw;
+  border: 2px solid black;
+}
+
+.btnAddMore {
+  border: none;
+  outline: none;
+}
+
+.profile_work {
+  margin: 10px 20px;
+}
+
+
+.profile_work a {
+  text-decoration: none;
+  color: black;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .profile_pic {
+    height: auto;
+    width: 100%;
+    border: 2px solid black;
+  }
+
+  .profile_head {
+    text-align: center;
+  }
+
+  .profile_work {
+    text-align: center;
+  }
+
+  .nav-item #home-tab {
+    text-align: center;
+    margin-left: 40%;
+    width: 100%;
+    margin-left: 100%;
+    font-size: 2rem;
+  }
+  .tab-content > .active {
+    display: block;
+    text-align: center;
+}
+}
+
+@media(max-width:786px){
+  .contact_item{
+    font-size: .7rem;
+  }
+  .contact_form_container{
+    width: 100%;
+    height: auto;
+    margin-top: 5rem;
+  }
+  .contact_form_name input{
+    display: block;
+    width: 100%;
+  }
+  .contact_form_text textarea{
+    display: block;
+    width: 100%;
+  }
+  #contact_form input {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    font-size: .5rem;
+  }
+  .signup_image {
+    display: none;
+  }
+  .home_page {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .home_page .home_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .home_div p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+  }
+  
+  .home_div h1 {
+    font-size: 4rem;
+    font-weight: bolder;
+    text-align: center;
+  }
+}
+
+@media(max-width:480px){
+  .contact_item{
+    font-size: .5rem;
+    margin-top: 5rem;
+  }
+  .phone_item .adress_item .email_item{
+    width: 100%;
+    height: auto;
+    order: 0;
+  }
+  .contact_form{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+  }
+  .contact_form_container{
+    width: 100%;
+    height: auto;
+    margin-top: 5rem;
+  }
+  .contact_form_name input{
+    display: block;
+    width: 100%;
+  }
+  .contact_form_text textarea{
+    display: block;
+    width: 100%;
+  }
+  #contact_form input {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    font-size: .5rem;
+  }
+  .signup_content {
+    height: auto;
+    width: 100%;
+    background-color: white;
+    box-shadow: 3px 5px 7px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    /* overflow: hidden; */
+  }
+  .signup_image {
+    display: none;
+  }
+  .home_page {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .home_page .home_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .home_div p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+  }
+  
+  .home_div h1 {
+    font-size: 4rem;
+    font-weight: bolder;
+    text-align: center;
+  }
+ 
+  
+}
